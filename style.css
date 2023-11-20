@@ -4,7 +4,7 @@
   --red: #FF0000ff;
   --raisin-black: #2E2D38ff;
   --tangerine: #EB8C3Eff;
-  --logoHeight: 45vh;
+  --logoHeight: 45dvh;
 }
 
 * {
@@ -32,7 +32,7 @@ body {
   display: flex;
   align-items: center;
   justify-content: space-between;
-  height: 5vh;
+  height: 5dvh;
   width: 100%;
   color: white;
   padding: 0 7px;
@@ -50,7 +50,7 @@ body {
 #logoBox {
   z-index: 10;
   position: fixed;
-  top: 5vh;
+  top: 5dvh;
   left: 0;
   height: var(--logoHeight);
   width: 100%;
@@ -72,10 +72,10 @@ body {
 .scroller {
   touch-action: none pan-y;
   width: 100%;
-  height: 100vh;
+  height: 100dvh;
   overflow: scroll;
-  padding-top: calc(var(--logoHeight) + 5vh);
-  padding-bottom: 35vh;
+  padding-top: calc(var(--logoHeight) + 5dvh);
+  padding-bottom: 35dvh;
   scroll-timeline: --scale-progress;
   background: var(--tangerine);
 
@@ -85,7 +85,7 @@ body {
     flex-direction: column;
     align-items: center;
     justify-content: space-between;
-    height: 33vh;
+    height: 33dvh;
     width: 100%;
     background: var(--tangerine);
     padding: 10% 0 5% 0;
@@ -113,7 +113,7 @@ body {
   bottom: 0;
   display: flex;
   justify-content: space-between;
-  height: 10vh;
+  height: 10dvh;
   width: 100%;
   background: var(--raisin-black);
 
@@ -135,7 +135,7 @@ body {
 
 #buffer {
   z-index: 1;
-  height: 18vh;
+  height: 18dvh;
   width: 100%;
   background: var(--tangerine);
 }
@@ -145,16 +145,16 @@ body {
   display: flex;
   align-items: center;
   justify-content: center;
-  height: 25vh;
+  height: 25dvh;
   width: 100%;
   color: white;
-  margin: 1vh 0;
+  margin: 1dvh 0;
   font-size: clamp(1.9em, 1em + 1vw, 2.9em);
 }
 
 .end {
-  margin-top: 25vh;
-  height: 30vh;
+  margin-top: 25dvh;
+  height: 30dvh;
 }
 
 .animation {
@@ -189,11 +189,11 @@ body {
   }
 
   30% {
-    height: 20vh;
+    height: 20dvh;
   }
 
   100% {
-    height: 20vh;
+    height: 20dvh;
   }
 }
 
@@ -213,6 +213,6 @@ body {
 
 @media all and (display-mode: standalone) {
   #bottom {
-    height: 40vh !important;
+    height: 40dvh !important;
   }
 }
