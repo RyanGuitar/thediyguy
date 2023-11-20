@@ -1,0 +1,217 @@
+:root {
+  --wenge: #645958ff;
+  --champagne: #F8E6CBff;
+  --red: #FF0000ff;
+  --raisin-black: #2E2D38ff;
+  --tangerine: #EB8C3Eff;
+  --logoHeight: 45vh;
+}
+
+* {
+  box-sizing: border-box;
+  font-family: -apple-system, BlinkMacSystemFont,
+    "Segoe UI", system-ui, Roboto, Oxygen-Sans, Ubuntu, Cantarell,
+    "Helvetica Neue", sans-serif;
+  margin: 0;
+}
+
+body {
+  touch-action: none;
+  user-select: none;
+  overscroll-behavior-y: contain;
+  background: var(--raisin-black);
+  timeline-scope: --scale-progress;
+}
+
+#banner {
+  z-index: 10;
+  position: fixed;
+  top: 0;
+  left: 0;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  height: 5vh;
+  width: 100%;
+  color: white;
+  padding: 0 7px;
+  background: var(--raisin-black);
+
+  & img {
+    position: relative;
+    right: 0;
+    height: 100%;
+    width: auto;
+    padding: 7px;
+  }
+}
+
+#logoBox {
+  z-index: 10;
+  position: fixed;
+  top: 5vh;
+  left: 0;
+  height: var(--logoHeight);
+  width: 100%;
+  background: var(--tangerine);
+
+  #logo {
+    display: block;
+    margin: 0 auto;
+    padding: 5px 0;
+    height: 100%;
+    width: auto;
+    transform: scaleX(0);
+    filter: drop-shadow(3px 3px 9px black);
+  }
+  animation: changeHeight auto linear forwards;
+  animation-timeline: --scale-progress;
+}
+
+.scroller {
+  touch-action: none pan-y;
+  width: 100%;
+  height: 100vh;
+  overflow: scroll;
+  padding-top: calc(var(--logoHeight) + 5vh);
+  padding-bottom: 35vh;
+  scroll-timeline: --scale-progress;
+  background: var(--tangerine);
+
+  #bottom {
+    transform: translate(0, 100%);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    height: 33vh;
+    width: 100%;
+    background: var(--tangerine);
+    padding: 10% 0 5% 0;
+    animation: scaleProgress auto linear forwards;
+    animation-timeline: --scale-progress;
+
+    & div {
+      text-align: center;
+      font-size: clamp(1.9em, 1em + 1vw, 2.9em);
+      color: white;
+    }
+
+    & img {
+      height: 50%;
+      width: auto;
+      rotate: 180deg;
+    }
+  }
+}
+
+#contact {
+  z-index: 10;
+  position: fixed;
+  left: 0;
+  bottom: 0;
+  display: flex;
+  justify-content: space-between;
+  height: 10vh;
+  width: 100%;
+  background: var(--raisin-black);
+
+  & img {
+    width: auto;
+    height: 100%;
+    padding: 10px 7px;
+  }
+
+  #name {
+    color: white;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+    padding: 5px 0;
+  }
+}
+
+#buffer {
+  z-index: 1;
+  height: 18vh;
+  width: 100%;
+  background: var(--tangerine);
+}
+
+.card {
+  text-align: center;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 25vh;
+  width: 100%;
+  color: white;
+  margin: 1vh 0;
+  font-size: clamp(1.9em, 1em + 1vw, 2.9em);
+}
+
+.end {
+  margin-top: 25vh;
+  height: 30vh;
+}
+
+.animation {
+  view-timeline-name: --subjectReveal;
+  animation-timeline: --subjectReveal;
+
+  animation-name: appear;
+  animation-fill-mode: both;
+  animation-duration: 1ms;
+}
+
+@keyframes appear {
+  0% {
+    opacity: 0;
+    transform: scaleX(0);
+  }
+
+  50% {
+    opacity: 1;
+    transform: scaleX(1);
+  }
+
+  100% {
+    opacity: 0;
+    transform: scaleX(0);
+  }
+}
+
+@keyframes changeHeight {
+  0% {
+    height: var(--logoHeight);
+  }
+
+  30% {
+    height: 20vh;
+  }
+
+  100% {
+    height: 20vh;
+  }
+}
+
+@keyframes scaleProgress {
+  0% {
+    scale: 1 1;
+  }
+
+  10% {
+    scale: 0 0;
+  }
+
+  100% {
+    scale: 0 0;
+  }
+}
+
+@media all and (display-mode: standalone) {
+  #bottom {
+    height: 40vh !important;
+  }
+}
