@@ -17,6 +17,7 @@
 
 body {
   touch-action: none;
+  -webkit-user-select: none;
   user-select: none;
   overscroll-behavior-y: contain;
   background: var(--raisin-black);
