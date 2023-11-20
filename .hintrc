@@ -12,6 +12,7 @@
           "scale"
         ]
       }
-    ]
+    ],
+    "apple-touch-icons": "off"
   }
 }
