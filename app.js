@@ -2,7 +2,7 @@ function initShare() {
   const shareData = {
     title: "The DIY Guy",
     text: "The One You Can Trust",
-    url: "https://shifts-psi.vercel.app",
+    url: "https://thediyguy.vercel.app",
   };
 
   const btn = document.querySelector("#share");
