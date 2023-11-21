@@ -1,133 +1,131 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
-    <!-- HTML Meta Tags -->
-    <title>The DIY Guy</title>
-    <meta name="description" content="For all your home renovation needs." />
-    <meta name="theme-color" content="#2E2D38ff" />
-    <!-- Facebook Meta Tags -->
-    <meta property="og:url" content="https://thediyguy.vercel.app" />
-    <meta property="og:type" content="website" />
-    <meta property="og:title" content="The DIY Guy" />
-    <meta
-      property="og:description"
-      content="For all your home renovation needs."
-    />
-    <meta
-      property="og:image"
-      content="https://thediyguy.vercel.app/screenshot.png"
-    />
+<head>
+  <!-- Google tag (gtag.js) -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-0QG1X68HFP"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag() { dataLayer.push(arguments); }
+    gtag('js', new Date());
 
-    <!-- Twitter Meta Tags -->
-    <meta name="twitter:card" content="summary_large_image" />
-    <meta property="twitter:domain" content="thediyguy.vercel.app" />
-    <meta property="twitter:url" content="https://thediyguy.vercel.app" />
-    <meta name="twitter:title" content="The DIY Guy" />
-    <meta
-      name="twitter:description"
-      content="For all your home renovation needs."
-    />
-    <meta
-      name="twitter:image"
-      content="https://thediyguy.vercel.app/screenshot.png"
-    />
+    gtag('config', 'G-0QG1X68HFP');
+  </script>
 
-    <!-- Meta Tags Generated via https://www.opengraph.xyz -->
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
-    <link rel="stylesheet" href="style.css" />
-    <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png" />
-    <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png" />
-    <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png" />
-    <link rel="manifest" href="/site.webmanifest" />
-    <script type="module">
-      import './pwaupdate.js';
-      const el = document.createElement('pwa-update');
-      document.body.appendChild(el);
-   </script>
-  </head>
-  <body>
-    <div id="banner">
-      PEARLY BEACH AREA<img src="share.webp" id="share" alt="share button" />
+  <!-- HTML Meta Tags -->
+  <title>The DIY Guy</title>
+  <meta name="description" content="For all your home renovation needs." />
+  <meta name="theme-color" content="#2E2D38ff" />
+  <!-- Facebook Meta Tags -->
+  <meta property="og:url" content="https://thediyguy.vercel.app" />
+  <meta property="og:type" content="website" />
+  <meta property="og:title" content="The DIY Guy" />
+  <meta property="og:description" content="For all your home renovation needs." />
+  <meta property="og:image" content="https://thediyguy.vercel.app/screenshot.png" />
+
+  <!-- Twitter Meta Tags -->
+  <meta name="twitter:card" content="summary_large_image" />
+  <meta property="twitter:domain" content="thediyguy.vercel.app" />
+  <meta property="twitter:url" content="https://thediyguy.vercel.app" />
+  <meta name="twitter:title" content="The DIY Guy" />
+  <meta name="twitter:description" content="For all your home renovation needs." />
+  <meta name="twitter:image" content="https://thediyguy.vercel.app/screenshot.png" />
+
+  <!-- Meta Tags Generated via https://www.opengraph.xyz -->
+
+  <link rel="stylesheet" href="style.css" />
+  <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png" />
+  <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png" />
+  <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png" />
+  <link rel="manifest" href="/site.webmanifest" />
+  <script type="module">
+    import './pwaupdate.js';
+    const el = document.createElement('pwa-update');
+    document.body.appendChild(el);
+  </script>
+</head>
+
+<body>
+  <div id="banner">
+    PEARLY BEACH AREA<img src="share.webp" id="share" alt="share button" />
+  </div>
+
+  <div id="logoBox">
+    <img src="logo.webp" id="logo" alt="logo" />
+  </div>
+
+  <div class="scroller">
+    <div id="topBuffer"></div>
+
+    <div id="bottom">
+      <div id="services">Scroll up to see what I can do for you</div>
     </div>
 
-    <div id="logoBox">
-      <img src="logo.webp" id="logo" alt="logo" />
+    <div id="contact">
+      <a href="tel:0715869931"><img src="phone.webp" alt="phone" id="phone" /></a>
+      <div id="name"><span>Shane Els</span><span>071 586 9931</span></div>
+      <a aria-label="Chat on WhatsApp" href="https://wa.me/27715869931"><img src="whatsapp.webp" alt="whatsapp"
+          id="whatsapp" /></a>
     </div>
 
-    <div class="scroller">
-      <div id="topBuffer"></div>
-
-      <div id="bottom">
-        <div id="services">Scroll up to see what I can do for you</div>
-      </div>
-
-      <div id="contact">
-        <a href="tel:0715869931"
-          ><img src="phone.webp" alt="phone" id="phone"
-        /></a>
-        <div id="name"><span>Shane Els</span><span>071 586 9931</span></div>
-        <a aria-label="Chat on WhatsApp" href="https://wa.me/27715869931"
-          ><img src="whatsapp.webp" alt="whatsapp" id="whatsapp"
-        /></a>
-      </div>
-
-      <div id="buffer"></div>
-      <div class="card animation big">
-        <span>I Do</span>
-      </div>
-      <div class="card animation">
-        <span>Tiling</span>
-      </div>
-      <div class="card animation">
-        <span>Painting</span>
-      </div>
-      <div class="card animation">
-        <span>Roofing</span>
-      </div>
-      <div class="card animation">
-        <span>Building</span>
-      </div>
-      <div class="card animation">
-        <span>Waterproofing</span>
-      </div>
-      <div class="card animation">
-        <span>Plumbing</span>
-      </div>
-      <div class="card animation">
-        <span>Electrical</span>
-      </div>
-      <div class="card animation">
-        <span>Rubberising</span>
-      </div>
-      <div class="card animation">
-        <span>Paving</span>
-      </div>
-      <div class="card animation">
-        <span>Doors</span>
-      </div>
-      <div class="card animation">
-        <span>windows</span>
-      </div>
-      <div class="card animation">
-        <span>Cupboards</span>
-      </div>
-      <div class="card animation">
-        <span>Shelves</span>
-      </div>
-      <div class="card animation big">
-        <span>And More</span>
-      </div>
-      <div class="card animation">
-        <span>Contact Me Below to Discuss Your Next Project</span>
-      </div>
-      <!-- <div class="card animation end">
+    <div id="buffer"></div>
+    <div class="card animation big">
+      <span>I Do</span>
+    </div>
+    <div class="card animation">
+      <span>Tiling</span>
+    </div>
+    <div class="card animation">
+      <span>Painting</span>
+    </div>
+    <div class="card animation">
+      <span>Roofing</span>
+    </div>
+    <div class="card animation">
+      <span>Building</span>
+    </div>
+    <div class="card animation">
+      <span>Waterproofing</span>
+    </div>
+    <div class="card animation">
+      <span>Plumbing</span>
+    </div>
+    <div class="card animation">
+      <span>Electrical</span>
+    </div>
+    <div class="card animation">
+      <span>Rubberising</span>
+    </div>
+    <div class="card animation">
+      <span>Paving</span>
+    </div>
+    <div class="card animation">
+      <span>Doors</span>
+    </div>
+    <div class="card animation">
+      <span>windows</span>
+    </div>
+    <div class="card animation">
+      <span>Cupboards</span>
+    </div>
+    <div class="card animation">
+      <span>Shelves</span>
+    </div>
+    <div class="card animation big">
+      <span>And More</span>
+    </div>
+    <div class="card animation">
+      <span>Contact Me Below to Discuss Your Next Project</span>
+    </div>
+    <!-- <div class="card animation end">
         <span>Contact Me to Find Out More</span>
       </div> -->
-    </div>
+  </div>
 
-    <script type="module" src="app.js"></script>
-  </body>
+  <script type="module" src="app.js"></script>
+</body>
+
 </html>
