@@ -154,11 +154,6 @@ body {
   padding:0 18px;
 }
 
-/* .end {
-  margin-top: 25dvh;
-  height: 30dvh;
-} */
-
 .animation {
   view-timeline-name: --subjectReveal;
   animation-timeline: --subjectReveal;
@@ -216,5 +211,11 @@ body {
 @media all and (display-mode: standalone) {
   #bottom {
     height: 40dvh !important;
+  }
+}
+
+@media (orientation:landscape){
+  body {
+    transform:rotate(90deg);
   }
 }
