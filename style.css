@@ -213,9 +213,3 @@ body {
     height: 40dvh !important;
   }
 }
-
-@media (orientation:landscape){
-  body {
-    transform:rotate(270deg);
-  }
-}
