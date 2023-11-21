@@ -216,6 +216,6 @@ body {
 
 @media (orientation:landscape){
   body {
-    transform:rotate(180deg);
+    transform:rotate(270deg);
   }
 }
