@@ -1,13 +1,5 @@
 {
-  "name": "The DIY Guy",
-  "short_name": "DIY Guy",
   "icons": [
-    {
-      "src": "maskable_icon_x192.png",
-      "sizes": "196x196",
-      "type": "image/png",
-      "purpose": "any maskable"
-    },
     {
       "src": "windows11/SmallTile.scale-100.png",
       "sizes": "71x71"
@@ -456,13 +448,5 @@
       "src": "ios/1024.png",
       "sizes": "1024x1024"
     }
-  ],
-  "theme_color": "#2E2D38ff",
-  "background_color": "#EB8C3Eff",
-  "display": "standalone",
-  "orientation": "portrait-primary",
-  "id": "The Diy Guy",
-  "description": "For all your home renovation needs.",
-  "start_url": "/",
-  "lang": "en"
+  ]
 }
