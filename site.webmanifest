@@ -12,13 +12,7 @@
       "src": "android-chrome-512x512.png",
       "sizes": "512x512",
       "type": "image/png",
-      "purpose": "any"
-    },
-    {
-      "src": "maskable_icon_x192.png",
-      "sizes": "196x196",
-      "type": "image/png",
-      "purpose": "maskable"
+      "purpose": "any maskable"
     },
     {
       "src": "windows11/SmallTile.scale-100.png",
