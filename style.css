@@ -98,7 +98,7 @@ body {
     & div {
       text-align: center;
       font-size: clamp(1.9em, 1em + 1vw, 2.9em);
-      color: white;
+      color: var(--raisin-black);
     }
   }
 }
@@ -148,7 +148,7 @@ body {
   justify-content: center;
   height: 25dvh;
   width: 100%;
-  color: white;
+  color: var(--raisin-black);
   margin: 1dvh 0;
   font-size: clamp(1.9em, 1em + 1vw, 2.9em);
   padding:0 18px;
