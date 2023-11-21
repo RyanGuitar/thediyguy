@@ -325,12 +325,7 @@
     {
       "src": "android-chrome-512x512.png",
       "sizes": "512x512",
-      "purpose":"any"
-    },
-    {
-      "src": "android/android-launchericon-192-192.png",
-      "sizes": "192x192",
-      "purpose":"maskable"
+      "purpose":"maskable any"
     },
     {
       "src": "android/android-launchericon-144-144.png",
