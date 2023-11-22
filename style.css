@@ -53,7 +53,7 @@ body {
 #logoBox {
   z-index: 10;
   position: sticky;
-  top: 5dvh;
+  top: 5vh;
   left: 0;
   height: var(--logoHeight);
   width: 100%;
