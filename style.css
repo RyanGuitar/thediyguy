@@ -20,7 +20,6 @@ html {
 }
 
 body {
-  touch-action: none;
   -webkit-user-select: none;
   user-select: none;
   overscroll-behavior-y: contain;
@@ -53,12 +52,13 @@ body {
 
 #logoBox {
   z-index: 10;
-  position: fixed;
+  position: sticky;
   top: 5dvh;
   left: 0;
   height: var(--logoHeight);
   width: 100%;
   background: var(--tangerine);
+  margin-bottom: 6dvh;
 
   #logo {
     display: block;
@@ -69,17 +69,15 @@ body {
     transform: scaleX(0);
     filter: drop-shadow(3px 3px 9px black);
   }
+
   animation: changeHeight auto linear forwards;
   animation-timeline: --scale-progress;
 }
 
 .scroller {
-  /* touch-action: pan-up; */
-  /* pointer-events: none; */
   width: 100%;
   height: 100vh;
   overflow: scroll;
-  padding-top: calc(var(--logoHeight) + 5vh);
   padding-bottom: 35vh;
   scroll-timeline: --scale-progress;
   background: var(--tangerine);
@@ -91,10 +89,11 @@ body {
     height: 33vh;
     width: 100%;
     background: var(--tangerine);
-    padding:0 18px;
+    padding: 0 18px;
     animation: scaleProgress auto linear forwards;
     animation-timeline: --scale-progress;
     transform: translate(0, 100%);
+
     & div {
       text-align: center;
       font-size: clamp(1.9em, 1em + 1vw, 2.9em);
@@ -104,7 +103,7 @@ body {
 }
 
 .big {
-  font-size: clamp(2.9em, 1em + 1.2vw, 3.9em)!important;
+  font-size: clamp(2.9em, 1em + 1.2vw, 3.9em) !important;
 }
 
 #contact {
@@ -151,7 +150,7 @@ body {
   color: var(--raisin-black);
   margin: 1dvh 0;
   font-size: clamp(1.9em, 1em + 1vw, 2.9em);
-  padding:0 18px;
+  padding: 0 18px;
 }
 
 .animation {
@@ -208,8 +207,54 @@ body {
   }
 }
 
-@media all and (display-mode: standalone) {
-  #bottom {
-    height: 40dvh !important;
+#rotateBox {
+
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: var(--raisin-black);
+  color: white;
+  visibility: hidden;
+
+  #rotate {
+    font-size: clamp(2em, 1em + 1vw, 3em);
+  }
+
+  #rotateSub {
+    font-size: 1em;
+  }
+}
+
+@media (orientation:landscape) {
+  #rotateBox {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    visibility: visible;
+  }
+
+  #banner {
+    visibility: hidden;
+  }
+
+  .scroller {
+    display: none;
+  }
+}
+
+@media (min-width:1000px) {
+  #rotateBox {
+    display: none;
+  }
+
+  #banner {
+    visibility: visible;
+  }
+
+  .scroller {
+    display: block;
   }
 }
